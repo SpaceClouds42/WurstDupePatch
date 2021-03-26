@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "us.spaceclouds42.wurst_dupe_patch.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "AntiDupeMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "wurst-dupe-patch",
+  "version": "${version}",
+  "name": "Wurst Dupe Patch",
+  "description": "Tiny mod to patch Wurst's \".dupe\" command",
+  "authors": [
+    "SpaceClouds42"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": "",
+    "issues": ""
+  },
+  "license": "LGPL",
+  "icon": "assets/wurst_dupe_patch/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      {
+        "value": "us.spaceclouds42.wurst_dupe_patch.Common::INSTANCE"
+      }
+    ]
+  },
+  "mixins": [
+    "wurst_dupe_patch.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.7.1",
+    "fabric": "*",
+    "fabric-language-kotlin": ">=1.5.0+kotlin.1.4.31",
+    "minecraft": "^1.16.5"
+  }
+}
